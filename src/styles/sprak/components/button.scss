@@ -27,11 +27,15 @@
 .button_mariner {
     @extend  %button-base;
     background-color: $color-mariner;
-    color: $color-porcelain;
+    color: $color-white;
 }
 .button_bluewood {
     background-color: $color-bluewood;
-    color: $color-porcelain;
+    color: $color-white;
+}
+.button_valencia {
+    background-color: $color-valencia;
+    color: $color-white;
 }
 .button_porcelain {
     background-color: $color-porcelain;

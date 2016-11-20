@@ -23,6 +23,21 @@ const Colors = () => {
                         </div>
                     </li>
                     <li>
+                        <input className="style-detail-checkbox" id="color-black-checkbox" type="checkbox" />
+
+                        <label htmlFor="color-black-checkbox">
+                            <div className="color-swatch bg-black" />
+                            <div className="font-base">Black</div>
+                        </label>
+
+                        <div className="style-detail">
+                            <pre>#222222</pre>
+                            <pre>$color-black</pre>
+                            <pre>.bg-black</pre>
+                            <pre>.color-black</pre>
+                        </div>
+                    </li>
+                    <li>
                         <input className="style-detail-checkbox" id="color-bluewood-checkbox" type="checkbox" />
 
                         <label htmlFor="color-bluewood-checkbox">

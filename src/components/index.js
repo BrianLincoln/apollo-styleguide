@@ -4,7 +4,7 @@ import App from './Main';
 
 import 'normalize.css';
 import './../styles/app/_app.scss';
-import './../styles/sprak/sprak-helpers.scss';
+import './../styles/sprak/sprak.scss';
 
 ReactDOM.render(
     <App />,

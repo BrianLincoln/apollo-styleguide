@@ -1,38 +1,5 @@
 @import './sprak/sprak-foundation.scss';
 
-* {
-    box-sizing: border-box;
-    font-family: $font-family-sans;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    list-style-type: none;
-}
-
-p {
-    @extend %font-sm;
-    margin: $space-sm 0;
-}
-
-pre {
-    background: $color-bluewood;
-    color: $color-white;
-    margin: $space-xs 0;
-    padding: $space-sm;
-    text-transform: none !important;
-    white-space: pre-wrap;
-}
-
-code {
-    background-color: $color-bluewood;
-    color: $color-white;
-}
-
-
-
 .style-detail-checkbox ~ label {
     cursor: pointer;
     display: inline-block;

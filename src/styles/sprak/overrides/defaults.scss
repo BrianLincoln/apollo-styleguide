@@ -9,12 +9,24 @@
     padding: 0;
 }
 
+h1 {
+    @extend %font-title-lg;
+}
+
+h2 {
+    @extend %font-title-md;
+}
+
+h3 {
+    @extend %font-title-sm;
+}
+
 ul {
     list-style-type: none;
 }
 
 p {
-    @extend %font-sm;
+    @extend %font-base;
     margin: $space-sm 0;
 }
 

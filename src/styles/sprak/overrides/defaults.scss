@@ -1,28 +1,41 @@
 @import "./../foundation/_index.scss";
 
-*, ul, li, h1, h2, h3, h4, h5 {
+* {
     box-sizing: border-box;
     color: $color-black;
-    font-family: $font-family-sans;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    @extend %font-title-lg;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    @extend %font-title-md;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    @extend %font-title-sm;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-h1 {
-    @extend %font-title-lg;
-}
-
-h2 {
-    @extend %font-title-md;
-}
-
-h3 {
-    @extend %font-title-sm;
-}
-
-ul {
-    list-style-type: none;
+li {
+    margin: 0;
+    padding: 0;
 }
 
 p {

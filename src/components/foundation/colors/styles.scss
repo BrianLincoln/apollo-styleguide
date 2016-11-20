@@ -1,0 +1,19 @@
+@import './sprak/sprak-foundation.scss';
+
+.colorlist > li {
+    padding-bottom: $space-lg;
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+.colorlist > li > label {
+    align-items: center;
+    display: flex;
+}
+.color-swatch {
+    box-shadow: 2px 2px 5px $color-bluewood;
+    display: inline-block;
+    height: $space-xl;
+    margin-right: $space-lg;
+    width: $space-xl;
+}

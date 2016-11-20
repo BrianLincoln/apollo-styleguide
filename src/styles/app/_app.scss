@@ -1,0 +1,60 @@
+@import './sprak/sprak-foundation.scss';
+
+* {
+    box-sizing: border-box;
+    font-family: $font-family-sans;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    @extend %font-sm;
+    margin: $space-sm 0;
+}
+
+pre {
+    background: $color-bluewood;
+    margin: $space-xs 0;
+    padding: $space-sm;
+    text-transform: none !important;
+    white-space: pre-wrap;
+}
+
+code {
+    background-color: $color-bluewood;
+    color: $color-white;
+}
+
+
+
+.style-detail-checkbox ~ label {
+    cursor: pointer;
+    display: inline-block;
+
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+
+    &:hover {
+        border-left: solid 3px $color-bluewood;
+        padding-left: $space-sm;
+        margin-left: -($space-sm + 3px);
+    }
+}
+
+.style-detail-checkbox {
+    display: none;
+}
+.style-detail-checkbox:checked ~ .style-detail {
+    display: block;
+}
+
+.style-detail {
+    display: none;
+}

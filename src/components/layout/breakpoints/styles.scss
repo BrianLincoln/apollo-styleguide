@@ -1,0 +1,20 @@
+@import './sprak/sprak-foundation.scss';
+
+.breakpointlist > li {
+    background-color: $color-porcelain;
+    padding: $space-xs 0;
+    margin-bottom: $space-xs;
+    text-align: center;
+}
+.breakpoint-xs {
+    max-width: $breakpoint-xs;
+}
+.breakpoint-sm {
+    max-width: $breakpoint-sm;
+}
+.breakpoint-md {
+    max-width: $breakpoint-md;
+}
+.breakpoint-lg {
+    max-width: $breakpoint-lg;
+}

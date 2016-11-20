@@ -1,0 +1,6 @@
+//import this file once per app, not per file to avoid duplicate declarations
+
+@import "./foundation/helpers/_index.scss";
+
+@import "./layout/_index.scss";
+@import "./components/_index.scss";

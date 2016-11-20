@@ -1,0 +1,34 @@
+@import "./../foundation/_index.scss";
+
+%list-item {
+    border-bottom: solid 1px $color-bluewood;
+    display: block;
+    padding: $space-sm 0;
+
+    &:first-child {
+        padding-top: 0;
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.list-item {
+    @extend %list-item;
+}
+
+.list-item_stacked {
+    @extend %list-item;
+    .list-item-label {
+        display: block;
+    }
+}
+
+.list-item-label {
+    @extend %font-sm;
+}
+
+.list-item-value {
+    @extend %font-sm;
+}

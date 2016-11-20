@@ -1,0 +1,47 @@
+@import "./../foundation/_index.scss";
+
+%button-base {
+    @extend %font-sm;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    padding: $space-md $space-lg;
+    min-width: $space-xl;
+    text-align: center;
+    &:hover {
+        opacity: .8;
+    }
+}
+.button, .button_md {
+    @extend  %button-base;
+}
+
+%button-base_sm {
+    @extend  %button-base;
+    padding: $space-sm $space-md;
+}
+.button_sm {
+    @extend %button-base_sm;
+}
+
+.button_mariner {
+    @extend  %button-base;
+    background-color: $color-mariner;
+    color: $color-porcelain;
+}
+.button_bluewood {
+    background-color: $color-bluewood;
+    color: $color-porcelain;
+}
+.button_porcelain {
+    background-color: $color-porcelain;
+    color: $color-bluewood;
+}
+.button_transparent {
+    background-color: transparent;
+    color: $color-mariner;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

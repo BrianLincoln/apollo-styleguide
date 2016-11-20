@@ -1,0 +1,14 @@
+@import './sprak/sprak-foundation.scss';
+
+.responsive-visibility {
+    overflow-x: auto;
+}
+.responsive-visibility table {
+    text-align: center;
+    width: 100%;
+
+    td, th {
+        border-right: solid 1px $color-bluewood;
+        padding: $space-sm;
+    }
+}

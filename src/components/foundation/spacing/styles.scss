@@ -1,0 +1,41 @@
+@import './sprak/sprak-foundation.scss';
+
+.spacelist > li {
+    padding-bottom: $space-lg;
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+.spacelist > li > label {
+    align-items: center;
+    display: flex;
+}
+.space-square {
+    margin-right: $space-lg;
+    min-width: $space-xl;
+}
+.space-square:before {
+    border: solid 1px $color-bluewood;
+    content: ' ';
+    display: inline-block;
+}
+.space-square_xs:before {
+    height: $space-xs;
+    width: $space-xs;
+}
+.space-square_sm:before {
+    height: $space-sm;
+    width: $space-sm;
+}
+.space-square_md:before {
+    height: $space-md;
+    width: $space-md;
+}
+.space-square_lg:before {
+    height: $space-lg;
+    width: $space-lg;
+}
+.space-square_xl:before {
+    height: $space-xl;
+    width: $space-xl;
+}

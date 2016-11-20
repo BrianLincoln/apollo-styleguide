@@ -1,0 +1,9 @@
+@import "./../foundation/_index.scss";
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $breakpoint-lg;
+    padding-left: $space-md;
+    padding-right: $space-md;
+}

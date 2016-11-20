@@ -1,0 +1,20 @@
+@import "./../index.scss";
+
+.font-title-lg {
+    @extend %font-title-lg;
+}
+.font-title-md {
+    @extend %font-title-md;
+}
+.font-title-sm {
+    @extend %font-title-sm;
+}
+.font-base {
+    @extend %font-base;
+}
+.font-base-alt {
+    @extend %font-base-alt;
+}
+.font-sm {
+    @extend %font-sm;
+}

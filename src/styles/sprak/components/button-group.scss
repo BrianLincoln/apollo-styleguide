@@ -1,0 +1,89 @@
+@import "./../foundation/_index.scss";
+
+%button-group-base {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    > .button {
+        margin-bottom: $space-md;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &.button_transparent {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+     > .button_sm {
+         margin-bottom: $space-sm;
+
+         &:last-child {
+             margin-bottom: 0;
+         }
+         &.button_transparent {
+             margin-left: 0;
+             margin-right: 0;
+         }
+     }
+}
+
+.button-group {
+    @extend %button-group-base;
+}
+
+.button-group_left {
+    @extend %button-group-base;
+}
+
+.button-group_right {
+    @extend %button-group-base;
+}
+
+
+@media (min-width: $breakpoint-sm) {
+    %button-group-base {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        > .button {
+            margin: 0 $space-md;
+
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            &.button_transparent {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+
+        > .button_sm {
+            margin: 0 $space-sm;
+
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            &.button_transparent {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .button-group_left {
+        justify-content: flex-start;
+    }
+
+
+    .button-group_right {
+        justify-content: flex-end;
+    }
+}

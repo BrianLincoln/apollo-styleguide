@@ -1,0 +1,49 @@
+@import "./../index.scss";
+
+.show-sm,
+.show-md,
+.show-lg,
+.show-xl {
+    display: none;
+}
+
+.hide-sm,
+.hide-md,
+.hide-lg,
+.hide-xl {
+    display: block;
+}
+
+
+@media (min-width: $breakpoint-xs) {
+    .show-sm {
+        display: block;
+    }
+    .hide-sm {
+        display: none;
+    }
+}
+@media (min-width: $breakpoint-sm) {
+    .show-md {
+        display: block;
+    }
+    .hide-md {
+        display: none;
+    }
+}
+@media (min-width: $breakpoint-md) {
+    .show-lg {
+        display: block;
+    }
+    .hide-lg {
+        display: none;
+    }
+}
+@media (min-width: $breakpoint-lg) {
+    .show-xl {
+        display: block;
+    }
+    .hide-xl {
+        display: none;
+    }
+}

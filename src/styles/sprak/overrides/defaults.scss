@@ -1,11 +1,12 @@
-@import "./../foundation/_index.scss";
+@import "./../sprak-variables.scss";
 
 * {
     box-sizing: border-box;
-    color: $color-black;
 }
 
 body {
+    color: $color-black;
+    font-family: $font-family-sans;
     margin: 0;
 }
 
@@ -41,6 +42,15 @@ li {
 p {
     @extend %font-base;
     margin: $space-sm 0;
+}
+
+a, a:visited {
+    color: $color-mariner;
+    text-decoration: none;
+}
+
+p > a:hover {
+    text-decoration: underline;
 }
 
 pre {

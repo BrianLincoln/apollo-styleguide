@@ -1,8 +1,9 @@
-@import "./../foundation/_index.scss";
+@import "./../sprak-variables.scss";
 
 %button-base {
     @extend %font-sm;
     border-radius: 6px;
+    border-width: 0px;
     cursor: pointer;
     display: inline-block;
     padding: $space-md $space-lg;
@@ -24,24 +25,24 @@
     @extend %button-base_sm;
 }
 
-.button_mariner {
+.button_mariner, a.button_mariner:visited  {
     @extend  %button-base;
     background-color: $color-mariner;
     color: $color-white;
 }
-.button_bluewood {
+.button_bluewood, a.button_bluewood:visited {
     background-color: $color-bluewood;
     color: $color-white;
 }
-.button_valencia {
+.button_valencia, a.button_valencia:visited {
     background-color: $color-valencia;
     color: $color-white;
 }
-.button_porcelain {
+.button_porcelain, a.button_porcelain:visited {
     background-color: $color-porcelain;
     color: $color-bluewood;
 }
-.button_transparent {
+.button_transparent, a.button_transparent:visited {
     background-color: transparent;
     color: $color-mariner;
 

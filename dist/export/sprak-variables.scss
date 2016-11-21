@@ -1,4 +1,22 @@
-@import "./breakpoints.scss";
+//import this file in sass files that need to use Sprak variables.
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 960px;
+$breakpoint-lg: 1224px;
+
+$color-white: #FFFFFF;
+$color-black: #222222;
+$color-bluewood: #2C3E50;
+$color-valencia: #E74C3C;
+$color-porcelain: #ECF0F1;
+$color-mariner: #3498DB;
+
+$space-xs: 5px;
+$space-sm: 10px;
+$space-md: 15px;
+$space-lg: 30px;
+$space-xl: 60px;
+
 
 $font-family-serif: Courier New, monospace;
 $font-family-sans: arial, sans-serif;
